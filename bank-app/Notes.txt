@@ -1,0 +1,95 @@
+
+
+
+Predicate predicate = new Predicate() {
+			@Override
+			public boolean test(Txn txn) {
+				return txn.getAmount() == amount;
+			}
+		};
+		
+		
+		
+		|
+		|
+		|
+		V
+		
+		
+		
+
+Predicate predicate =
+			@Override
+			public boolean test(Txn txn) {
+				return txn.getAmount() == amount;
+			}
+		
+		
+		
+		|
+		|
+		|
+		V
+		
+	
+
+Predicate predicate =
+			 boolean test(Txn txn) {
+				return txn.getAmount() == amount;
+			}
+			
+		
+	
+		|
+		|
+		|
+		V	
+		
+		
+		
+
+Predicate predicate =
+			  test(Txn txn) {
+				return txn.getAmount() == amount;
+			}
+			
+			
+		|
+		|
+		|
+		V	
+		
+		
+Predicate predicate =
+			  (txn) {
+				return txn.getAmount() == amount;
+			}
+		
+			
+			
+		|
+		|
+		|
+		V	
+		
+		
+		
+Predicate predicate =
+			  (txn) -> {
+				return txn.getAmount() == amount;
+			}
+		
+			
+		|
+		|
+		|
+		V	
+		
+		
+		// java-function / Lambda 
+		
+Predicate predicate = txn ->txn.getAmount() == amount;
+			
+		
+		
+		
